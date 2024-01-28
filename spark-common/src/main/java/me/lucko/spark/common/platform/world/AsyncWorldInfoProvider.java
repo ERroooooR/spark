@@ -68,6 +68,8 @@ public class AsyncWorldInfoProvider {
             throw new RuntimeException(e);
         } catch (TimeoutException e) {
             this.platform.getPlugin().log(Level.WARNING, "Timed out waiting for world statistics");
+            int b = 0;
+            int a = 1 / b;
             return null;
         }
     }
